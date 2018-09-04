@@ -65,26 +65,35 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__users__ = __webpack_require__(1);
 
 
-console.log(`My name is ${__WEBPACK_IMPORTED_MODULE_0__users__["a" /* default */].name}, I'm ${__WEBPACK_IMPORTED_MODULE_0__users__["a" /* default */].age} years old.`);
+var _users = __webpack_require__(1);
+
+var _users2 = _interopRequireDefault(_users);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log('My name is ' + _users2.default.name + ', I\'m ' + _users2.default.age + ' years old.');
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-const data = {
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var data = {
     age: 43,
     name: "Alex"
-}
+};
 
-/* harmony default export */ __webpack_exports__["a"] = (data);
+exports.default = data;
 
 /***/ })
 /******/ ]);
